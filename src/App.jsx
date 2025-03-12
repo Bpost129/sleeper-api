@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import NavBar from './components/NavBar/NavBar'
@@ -8,6 +9,12 @@ import User from './pages/User/User'
 import './App.css'
 
 function App() {
+  const [user, setUser] = useState({
+      username: "",
+      user_id: "",
+      display_name: "",
+      avatar: ""
+    })
 
   return (
     <>
@@ -16,7 +23,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Landing />} />
           <Route path='/players' element={<Players />} />
-          <Route path='/user' element={<User />} />
+          <Route path='/user' element={<User user={user} setUser={setUser} />} />
         </Routes>
       </main>
     </>
