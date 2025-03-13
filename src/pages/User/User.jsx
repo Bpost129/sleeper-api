@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react"
+// import { useState, useEffect } from "react"
 
 import { getUser } from '../../services/sleeper-api'
 
 const User = ({ user, setUser }) => {
-  const [leagues, setLeagues] = useState([])
   
   const fetchUser = async (username) => {
     const userData = await getUser(username)

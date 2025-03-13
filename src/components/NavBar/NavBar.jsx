@@ -5,7 +5,7 @@ const NavBar = () => {
     <main id='navbar'>
       <NavLink to='/'>Home</NavLink>
       <NavLink to='/user'>User</NavLink>
-      <NavLink to='/players'>Players</NavLink>
+      <NavLink to='/leagues'>Leagues</NavLink>
     </main>
   )
 }
