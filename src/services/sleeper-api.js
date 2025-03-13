@@ -6,8 +6,11 @@ export async function getUser(username) {
 }
 
 export async function getAllLeagues(userId) {
-  const res = await fetch(`${baseUrl}/user/${userId}/leagues/nfl/2024`)
+  const res = await fetch(`${baseUrl}/user/${userId}/leagues/nfl/${new Date().getFullYear()}`)
   return res.json()
 }
 
-// ${new Date().getFullYear()}
+export async function getLeague(leagueId) {
+  const res = await fetch(`${baseUrl}/league/${leagueId}`)
+  return res.json()
+}
