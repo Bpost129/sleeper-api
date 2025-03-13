@@ -1,12 +1,16 @@
 #root {
   max-width: 1280px;
-  margin: 5rem auto;
-  padding: 2rem;
+  margin: 6rem auto;
+  /* padding: 5rem; */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+main {
+  margin-top: 0;
 }
 
 #navbar {
@@ -23,4 +27,15 @@
   font-weight: 600;
   font-size: 1.25rem;
   color: aliceblue;
+}
+
+.league-nav {
+  width: 24rem;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 -10px 1px rgb(55, 82, 82);
+  background-color: rgb(55, 82, 82);
+}
+
+.league-nav > a {
+  margin: 0 0.5rem;
 }
