@@ -14,3 +14,8 @@ export async function getLeague(leagueId) {
   const res = await fetch(`${baseUrl}/league/${leagueId}`)
   return res.json()
 }
+
+export async function getLeagueUsers(leagueId) {
+  const res = await fetch(`${baseUrl}/league/${leagueId}/users`)
+  return res.json()
+}
