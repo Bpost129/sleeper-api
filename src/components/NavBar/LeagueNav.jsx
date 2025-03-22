@@ -1,9 +1,12 @@
-import { NavLink } from "react-router-dom"
+import { useParams, NavLink } from "react-router-dom"
+
 
 const LeagueNav = () => {
+  const leagueId = useParams()
+
   return (
     <div className="league-nav">
-      <NavLink>Rosters</NavLink>
+      <NavLink to={`/leagues/${leagueId}/rosters`}>Rosters</NavLink>
       <NavLink>League Nav</NavLink>
       <NavLink>League Nav</NavLink>
     </div>

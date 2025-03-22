@@ -23,7 +23,7 @@ const LeagueDetails = () => {
 
   return (
     <>
-      <LeagueNav />
+      <LeagueNav leagueId={leagueId} />
       <main>
         <h1>Details</h1>
         <img src={`https://sleepercdn.com/avatars/thumbs/${league.avatar}`} alt="" />
