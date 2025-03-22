@@ -30,6 +30,8 @@ main {
 }
 
 .league-nav {
+  position: fixed;
+  translate: -7.09rem;
   width: 24rem;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 -10px 1px rgb(55, 82, 82);

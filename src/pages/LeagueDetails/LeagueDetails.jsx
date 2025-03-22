@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import { useParams, NavLink } from "react-router-dom"
 
+import LeagueNav from "../../components/NavBar/LeagueNav"
+
 import { getLeague, getLeagueUsers } from "../../services/sleeper-api"
 
 const LeagueDetails = () => {
@@ -21,11 +23,7 @@ const LeagueDetails = () => {
 
   return (
     <>
-      <div className="league-nav">
-        <NavLink>League Nav</NavLink>
-        <NavLink>League Nav</NavLink>
-        <NavLink>League Nav</NavLink>
-      </div>
+      <LeagueNav />
       <main>
         <h1>Details</h1>
         <img src={`https://sleepercdn.com/avatars/thumbs/${league.avatar}`} alt="" />
