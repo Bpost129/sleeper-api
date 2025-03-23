@@ -3,20 +3,16 @@ import { useParams, NavLink } from "react-router-dom"
 
 import LeagueNav from "../../components/NavBar/LeagueNav"
 
-import { getLeague, getLeagueUsers } from "../../services/sleeper-api"
+import { getLeague } from "../../services/sleeper-api"
 
 const LeagueDetails = () => {
   const [league, setLeague] = useState({})
-  const [users, setUsers] = useState([])
   const { leagueId } = useParams()
 
   useEffect(() => {
     const fetchLeagueDetails = async () => {
       const leagueData = await getLeague(leagueId)
-      const usersData = await getLeagueUsers(leagueId)
       setLeague(leagueData)
-      setUsers(usersData)
-      console.log(usersData)
     }
     fetchLeagueDetails()
   }, [leagueId])
@@ -32,12 +28,7 @@ const LeagueDetails = () => {
         <p>TEAMS: {league.total_rosters}</p>
         <p>STATUS: {league.status}</p>
 
-        <ul >
-          MEMBERS
-          {users.map((user, idx) => 
-            <li key={idx}>{user.display_name}</li>
-          )}
-        </ul>
+        
       </main>
     </>
   )
