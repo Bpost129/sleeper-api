@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import Landing from './pages/Landing/Landing'
@@ -8,6 +8,7 @@ import Leagues from './pages/Leagues/Leagues'
 import LeagueDetails from './pages/LeagueDetails/LeagueDetails'
 import LeagueRosters from './pages/LeagueRosters/LeagueRosters'
 
+import { getPlayers } from './services/sleeper-api'
 
 import './App.css'
 
@@ -18,7 +19,16 @@ function App() {
     display_name: "",
     avatar: ""
   })
+  // const [players, setPlayers] = useState({})
   
+  // useEffect(() => {
+  //   const fetchPlayers = async () => {
+  //     const playerData = await getPlayers()
+  //     setPlayers(playerData)
+  //     console.log(playerData)
+  //   }
+  //   fetchPlayers()
+  // }, [])
 
   return (
     <>
