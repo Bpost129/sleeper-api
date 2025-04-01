@@ -1,5 +1,7 @@
 // import { useState, useEffect } from "react"
 
+import UserCard from '../../components/UserCard/UserCard'
+
 import { getUser } from '../../services/sleeper-api'
 
 const User = ({ user, setUser }) => {
@@ -27,13 +29,14 @@ const User = ({ user, setUser }) => {
         <button type="submit" >Submit</button>
       </form>
       {user && 
-        <div>
-          <img src={`https://sleepercdn.com/avatars/thumbs/${user.avatar}`} alt="" />
-          <p>Username: {user.username}</p>
-          <p>Display Name: {user.display_name}</p>
-          <p>User ID: {user.user_id}</p>
-          <p>Avatar: {user.avatar}</p>
-        </div>
+        <UserCard user={user} />
+        // <div>
+        //   <img src={`https://sleepercdn.com/avatars/thumbs/${user.avatar}`} alt="" />
+        //   <p>Username: {user.username}</p>
+        //   <p>Display Name: {user.display_name}</p>
+        //   <p>User ID: {user.user_id}</p>
+        //   <p>Avatar: {user.avatar}</p>
+        // </div>
       }
     </>
   )
