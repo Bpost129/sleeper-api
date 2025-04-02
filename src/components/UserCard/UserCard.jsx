@@ -1,6 +1,6 @@
 const UserCard = ({ user }) => {
   return (
-    <div>
+    <div className="user-card">
       <img src={`https://sleepercdn.com/avatars/thumbs/${user.avatar}`} alt="" />
       <p>Username: {user.username}</p>
       <p>Display Name: {user.display_name}</p>

@@ -41,3 +41,10 @@ main {
 .league-nav > a {
   margin: 0 0.5rem;
 }
+
+.user-card {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+}
