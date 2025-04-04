@@ -18,7 +18,7 @@ const Leagues = (props) => {
   return (
     <>
       <h1>Leagues</h1>
-      <ul>
+      <ul className="league-list">
         {leagues.map((league, idx) => 
           <NavLink key={idx} to={`/leagues/${league.league_id}`}>{league.name}</NavLink>
         )}

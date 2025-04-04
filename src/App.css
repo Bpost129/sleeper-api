@@ -48,3 +48,17 @@ main {
   border: 1px solid white;
   border-radius: 2rem;
 }
+
+.league-list {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+
+}
+
+.league-list > a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
