@@ -22,11 +22,13 @@ const LeagueDetails = () => {
       <LeagueNav leagueId={leagueId} />
       <main>
         <h1>Details</h1>
-        <img src={`https://sleepercdn.com/avatars/thumbs/${league.avatar}`} alt="" />
-        <p>{league.name}</p>
-        <p>SEASON: {league.season}</p>
-        <p>TEAMS: {league.total_rosters}</p>
-        <p>STATUS: {league.status}</p>
+        <div className="league-bio">
+          <img src={`https://sleepercdn.com/avatars/thumbs/${league.avatar}`} alt="" />
+          <p>{league.name}</p>
+          <p>SEASON: {league.season}</p>
+          <p>TEAMS: {league.total_rosters}</p>
+          <p>STATUS: {league.status}</p>
+        </div>
 
         
       </main>
