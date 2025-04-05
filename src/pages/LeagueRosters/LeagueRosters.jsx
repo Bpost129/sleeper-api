@@ -25,26 +25,28 @@ const LeagueRosters = () => {
   return (
     <>
       <LeagueNav />
-      <h2>Rosters</h2>
-      <table>
+      <main className="league-roster">
+        <h2>Rosters</h2>
+        <table>
 
-        {users.map((user, idx) => 
-          <>
-            <th key={idx}>{user.display_name}</th>
-            {rosters.map((roster, idx) =>
-              {if (user.user_id === roster.owner_id) {
-                return (
-                  <>
-                    <td key={idx}>{roster.players.map((player, pidx) =>
-                      <p key={pidx}>{player}</p>
-                    )}</td>
-                  </>
-                )
-              }}
-            )}
-          </>
-        )}
-      </table>
+          {users.map((user, idx) => 
+            <>
+              <th key={idx}>{user.display_name}</th>
+              {rosters.map((roster, idx) =>
+                {if (user.user_id === roster.owner_id) {
+                  return (
+                    <>
+                      <td key={idx}>{roster.players.map((player, pidx) =>
+                        <p key={pidx}>{player}</p>
+                      )}</td>
+                    </>
+                  )
+                }}
+              )}
+            </>
+          )}
+        </table>
+      </main>
     </>
   )
 }
