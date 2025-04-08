@@ -44,17 +44,31 @@ main {
 }
 
 .user-card {
+  width: 380px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   margin-top: 2rem;
   padding: 1rem;
   border: 1px solid white;
   border-radius: 2rem;
 }
 
+.user-card > img {
+  align-self: center;
+  height: 50px;
+  width: 50px;
+}
+
 .league-list {
+  min-width: 300px;
   margin-top: 2rem;
   padding: 1rem;
   border: 1px solid white;
   border-radius: 2rem;
+  flex-wrap: wrap;
 }
 
 .league-list > a {
