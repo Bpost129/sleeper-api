@@ -31,7 +31,7 @@ const LeagueRosters = () => {
 
           {users.map((user, idx) => 
             <>
-              <th key={idx}>{user.display_name}</th>
+              <th key={idx}>{user.display_name}
               {rosters.map((roster, idx) =>
                 {if (user.user_id === roster.owner_id) {
                   return (
@@ -43,6 +43,7 @@ const LeagueRosters = () => {
                   )
                 }}
               )}
+              </th>
             </>
           )}
         </table>
