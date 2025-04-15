@@ -7,6 +7,7 @@ import User from './pages/User/User'
 import Leagues from './pages/Leagues/Leagues'
 import LeagueDetails from './pages/LeagueDetails/LeagueDetails'
 import LeagueRosters from './pages/LeagueRosters/LeagueRosters'
+import Transactions from './pages/Transactions/Transactions'
 
 // import { getPlayers } from './services/sleeper-api'
 

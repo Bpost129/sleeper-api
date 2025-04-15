@@ -31,6 +31,6 @@ export async function getPlayers() {
 }
 
 export async function getTransactions(leagueId) {
-  const res = await fetch(`${baseUrl}/league/${leagueId}/transactions`)
+  const res = await fetch(`${baseUrl}/league/${leagueId}/traded_picks`)
   return res.json()
 }
