@@ -27,7 +27,8 @@ const Transactions = () => {
         <div>
           <p>Season: {trans.season}</p>
           <p>Round: {trans.round}</p>
-          {/* <p>Previous Owner: {users[trans.previous_owner_id]}</p> */}
+          {/* <p>Recipient: {users[trans.owner_id].display_name}</p>
+          <p>Previous Owner: {users[trans.previous_owner_id].display_name}</p> */}
         </div>
       )}
     </>
