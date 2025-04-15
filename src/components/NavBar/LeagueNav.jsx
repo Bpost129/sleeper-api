@@ -8,7 +8,7 @@ const LeagueNav = () => {
     <div className="league-nav">
       <NavLink to={`/leagues/${leagueId}/rosters`}>Rosters</NavLink>
       <NavLink>Free Agents</NavLink>
-      <NavLink to={`/leagues`}>Transactions</NavLink>
+      <NavLink to={`/leagues/${leagueId}/transactions`}>Transactions</NavLink>
     </div>
   )
 }

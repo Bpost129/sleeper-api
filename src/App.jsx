@@ -40,6 +40,7 @@ function App() {
           <Route path='/leagues' element={<Leagues user={user} />} />
           <Route path='/leagues/:leagueId' element={<LeagueDetails />} />
           <Route path='/leagues/:leagueId/rosters' element={<LeagueRosters />} />
+          <Route path='/leagues/:leagueId/transactions' element={<Transactions />} />
         </Routes>
       </main>
     </>
