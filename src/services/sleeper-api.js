@@ -29,3 +29,8 @@ export async function getPlayers() {
   const res = await fetch(`${baseUrl}/players/nfl`)
   return res.json()
 }
+
+export async function getTransactions(leagueId) {
+  const res = await fetch(`${baseUrl}/league/${leagueId}/transactions`)
+  return res.json()
+}
